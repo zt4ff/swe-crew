@@ -2,6 +2,9 @@ from crewai import Task
 
 
 class Tasks:
+    def __init__(self, project_description):
+        self.project_description = project_description
+
     def design_ui_task(self, agent):
         return Task(
             description=f"Design the user interface for the {self.project_description}. Include layouts for the home page, menu page, about us page, and contact page.",
