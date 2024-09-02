@@ -30,6 +30,7 @@ class Agents():
             backstory="You're a frontend expert with 6 years of experience, specializing in React and Vue.js. You're passionate about creating seamless user experiences and have a strong foundation in web performance optimization and progressive enhancement techniques.",
             allow_delegation=False,
             verbose=True,
+            allow_code_execution=True,
             tools=[FileWriteTool()],
         )
 
@@ -40,6 +41,7 @@ class Agents():
             backstory="With 7 years of backend development experience, you're proficient in languages like Python and Node.js, and have extensive knowledge of database systems and cloud platforms. You've successfully built and maintained high-traffic web applications and are well-versed in microservices architecture.",
             allow_delegation=False,
             verbose=True,
+            allow_code_execution=True,
             tools=[FileWriteTool()],
         )
 
@@ -58,5 +60,6 @@ class Agents():
             goal="Develop and execute comprehensive test plans to ensure the website's functionality, performance, and security across different devices and browsers",
             backstory="You have 6 years of experience in quality assurance for web applications. You're proficient in both manual and automated testing methodologies, with expertise in tools like Selenium and JMeter. You have a keen eye for detail and a passion for delivering high-quality, bug-free products.",
             allow_delegation=False,
+            allow_code_execution=True,
             verbose=True,
         )
